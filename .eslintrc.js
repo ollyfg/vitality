@@ -1,0 +1,47 @@
+module.exports = {
+  env: {
+    node: true,
+    es2021: true,
+  },
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+  ],
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    ecmaVersion: "latest",
+    sourceType: "module",
+  },
+  plugins: ["@typescript-eslint"],
+  rules: {
+    "@typescript-eslint/comma-dangle": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/quotes": "off",
+    "@typescript-eslint/space-before-function-paren": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    camelcase: "off",
+    "func-names": "off",
+    "import/no-cycle": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/order": "off",
+    "import/prefer-default-export": "off",
+    "no-await-in-loop": "off",
+    "no-console": "off",
+    "no-loop-func": "off",
+    "no-nested-ternary": "off",
+    "no-param-reassign": "off",
+    "no-plusplus": [
+      "error",
+      {
+        allowForLoopAfterthoughts: true,
+      },
+    ],
+    "no-underscore-dangle": "off",
+    "no-unused-vars": "off",
+    "no-useless-escape": "off",
+    "no-continue": "off",
+  },
+};

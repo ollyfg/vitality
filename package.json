@@ -1,0 +1,31 @@
+{
+  "name": "vitality",
+  "version": "1.0.0",
+  "description": "Automatically log in and redeem AIA Vitality rewards",
+  "main": "src/index.ts",
+  "scripts": {
+    "redeem": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ollyfg/vitality.git"
+  },
+  "author": "Oliver Fawcett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ollyfg/vitality/issues"
+  },
+  "homepage": "https://github.com/ollyfg/vitality#readme",
+  "dependencies": {
+    "@types/superagent": "^4.1.15",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "^2.7.1",
+    "superagent": "^8.0.0",
+    "ts-node": "^10.8.2"
+  }
+}

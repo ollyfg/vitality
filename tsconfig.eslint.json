@@ -1,0 +1,8 @@
+{
+  // Special config for the eslint parser that includes all files in the project.
+  // This is necessary to stop eslint from throwing up errors if you lint/open a non-source file (e.g. .eslintrc.js).
+  // This is caused when you have linting rules enabled the require type info from typescript (we do):
+  // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionsproject
+  "extends": "./tsconfig.json",
+  "include": ["**/*", "**/.*"],
+}
